@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.github.michaelmarkieta"
+        version     = "1.0" >
+
+    <name>ypool Mining Monitor</name>
+
+    <description>
+        Cryptocurrency mining hardware monitor for the ypool mining pool (ypool.net).
+    </description>
+
+    <author href="https://github.com/MichaelMarkieta/ypoolMiningMonitor" email="michael@spatialanalysis.ca">
+        Michael Markieta 
+    </author>
+	
+	<gap:platform name="android" />
+	
+	<icon src="icon.png" />
+	
+	<icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+</widget>

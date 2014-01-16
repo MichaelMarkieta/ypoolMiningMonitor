@@ -1,0 +1,22 @@
+{
+    "status_code": 1,
+    "workers": [
+    {
+        "workerId": 214298,
+        "workerName": "markieta.home",
+        "workerPasswordHash": "04FEF4A7323D2FCBADA6391889CE7E6249E0CB110A2F392DFDE5D430C348C3E9",
+        "isActive": 2
+    },
+    {
+        "workerId": 293158,
+        "workerName": "markieta.geog",
+        "workerPasswordHash": "04FEF4A7323D2FCBADA6391889CE7E6249E0CB110A2F392DFDE5D430C348C3E9",
+        "isActive": 5
+    },
+    {
+        "workerId": 327113,
+        "workerName": "markieta.prog",
+        "workerPasswordHash": "04FEF4A7323D2FCBADA6391889CE7E6249E0CB110A2F392DFDE5D430C348C3E9",
+        "isActive": 2
+    }]
+}

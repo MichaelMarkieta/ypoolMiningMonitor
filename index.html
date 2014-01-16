@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="YPOOL Mining Hardware Monitor">
+        <meta name="author" content="Michael Markieta">
+        <title>YPOOL MONITOR</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/signin.css" rel="stylesheet">
+        <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+        <link href="css/customizations.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="display:none;">
+                <ul class="nav nav-tabs">
+                    <li class="dropdown dropdown-coins">
+                        <a id="dropdown-coins-label" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">PTS</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-coins-label">
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="javascript:void(0)">PTS</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="javascript:void(0)">XPM</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="javascript:void(0)">DOGE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#personal" data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a>
+                    </li>
+                    <li>
+                        <a href="#global" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span></a>
+                    </li>
+                    <li class="refresh-data btn">
+                        <span class="glyphicon glyphicon-refresh btn-refresh">
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content center-block" style="display:none;">
+                <div class="tab-pane active fade in" id="personal">
+                    <p class="text-center small text-muted" name="data-date">Last updated: </p>
+                    <h3 class="text-center" id="personal-title">Personal Statistics</h3>
+                    <div class="table-responsive">
+                        <table class="table table-condensed" id="personal-table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Payment</span>
+                                            <input type="text" class="form-control standardized-width" name="payment" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Balance</span>
+                                            <input type="text" class="form-control standardized-width" name="balance" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Unconfirmed</span>
+                                            <input type="text" class="form-control standardized-width" name="unconfirmed" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Auto Payout</span>
+                                            <input type="text" class="form-control standardized-width" name="autopayout" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Donation</span>
+                                            <input type="text" class="form-control standardized-width" name="donation" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+					<h4 class="text-center" id="blocks-title">Block Performance: <small>COIN YIELD</small></h4>
+					<div id="block-performance-container">
+						<div id="block-performance-placeholder"></div>
+					</div>
+                    <h4 class="text-center" id="workers-title">Connected Miners <span class="badge"></span></h4>
+                    <table class="table table-condensed table-striped" id="workers-table">
+                        <thead>
+                            <tr>
+                                <th class="worker">Worker</th>
+                                <th class="shares">Shares/Hr</th>
+                                <th class="version">Version</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="global">
+                    <p class="text-center small text-muted" name="data-date">Last updated:</p>
+                    <h3 class="text-center" id="global-title">Global Statistics</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-condensed" id="personal-table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">No. of Workers</span>
+                                            <input type="text" class="form-control standardized-width" name="numworkers" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Shares/Second</span>
+                                            <input type="text" class="form-control standardized-width" name="shares" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <span class="input-group-addon">Difficulty</span>
+                                            <input type="text" class="form-control standardized-width" name="difficulty" disabled>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+					
+					<h4 class="text-center" id="block-title">Blocks Found</h4>
+                    <table class="table table-condensed table-striped" id="blocksfound-table">
+                        <thead>
+                            <tr>
+                                <th id="hr1">1 Hr</th>
+                                <th id="hr3">3 Hr</th>
+                                <th id="hr6">6 Hr</th>
+                                <th id="hr12">12 Hr</th>
+                                <th id="hr24">24 Hr</th>
+                                <th id="hr48">48 Hr</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="signin-container">
+                <form class="form-signin" role="form" action="JavaScript:submitAPIkey()">
+                    <h2 class="form-signin-heading">YPOOL MONITOR</h2>
+                    <input name="key" type="text" class="form-control" placeholder="API Key" required>
+                    <button class="btn btn-lg btn-primary btn-block" id="submitAPIkey-button" type="submit" autocomplete="off">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer" style="display:none;">
+            <div id="footer-container">
+                <p class="text-muted">Donations appreciated: <a href="https://coinplorer.com/PTS/Addresses/PdEQzGF5GEMCeJCNf7nz8dDFUsB9ktLMbM" target="_blank">PTS</a>, <a href="https://coinplorer.com/XPM/Addresses/AcxnLp3aArbL1cByqf91CmeNdh35u4rsox" target="_blank">XPM</a> or <a href="http://dogechain.info/address/D5NgMGcQGJCyRQuHsEoi2vAtJDnz5qgNxh"
+                    target="_blank">DOGE</a></p>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Animation Enhancements -->
+        <script src="js/jquery.animate-enhanced.min.js"></script>
+        <!-- Flot for jQuery JavaScript -->
+        <script src="js/jquery.flot.min.js"></script>
+		<script src="js/jquery.flot.resize.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Functionality for App -->
+        <script src="js/ypoolmonitor.js"></script>
+    </body>
+</html>

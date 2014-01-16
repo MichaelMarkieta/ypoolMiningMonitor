@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-black-webfont.eot');
+    src: url('../fonts/sourcesanspro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-black-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-black-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-black-webfont.svg#source_sans_problack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-blackit-webfont.eot');
+    src: url('../fonts/sourcesanspro-blackit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-blackit-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-blackit-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-blackit-webfont.svg#source_sans_problack_italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-bold-webfont.eot');
+    src: url('../fonts/sourcesanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-bold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-boldit-webfont.eot');
+    src: url('../fonts/sourcesanspro-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-boldit-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-boldit-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-boldit-webfont.svg#source_sans_probold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-extralight-webfont.eot');
+    src: url('../fonts/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-extralight-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-extralight-webfont.svg#source_sans_proextralight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-extralightit-webfont.eot');
+    src: url('../fonts/sourcesanspro-extralightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-extralightit-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-extralightit-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-extralightit-webfont.svg#source_sans_proXLtIt') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-it-webfont.eot');
+    src: url('../fonts/sourcesanspro-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-it-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-it-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-it-webfont.svg#source_sans_proitalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-light-webfont.eot');
+    src: url('../fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-lightit-webfont.eot');
+    src: url('../fonts/sourcesanspro-lightit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-lightit-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-lightit-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-lightit-webfont.svg#source_sans_prolight_italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-semibold-webfont.eot');
+    src: url('../fonts/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'source_sans_pro';
+    src: url('../fonts/sourcesanspro-semiboldit-webfont.eot');
+    src: url('../fonts/sourcesanspro-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-semiboldit-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-semiboldit-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-semiboldit-webfont.svg#source_sans_proSBdIt') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "source_sans_pro","Helvetica Neue", Helvetica, Arial,sans-serif;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+body {
+    font-family: "source_sans_pro","Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+
+p.small {
+    font-size: 10px;
+    font-family: source_sans_pro;
+}
+
+.frosted {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: rgb(0,0,0);
+	background: transparent;
+	background: rgba(0,0,0, 0.5);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	z-index: 99999;
+	display: none;
+	top: 0;
+	left: 0;
+}
+
+.has-error .form-control {
+    background-color: #FFDFDF;
+}
+
+.form-signin {
+    padding-top: 40px;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.form-signin-heading {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+}
+
+.nav-tabs {
+    padding-top: 8px;
+    border-bottom: 0;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.nav-tabs>li, .nav-tabs>li>a {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    *display: inline;
+    zoom: 1;
+    margin-right: 0;
+    width: 56px;
+}
+
+.nav-tabs>li.active, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background-color: #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-content {
+    padding: 60px 40px 0;
+    max-width: 500px;
+}
+
+li.dropdown-coins, li.dropdown-coins>a, li.dropdown-coins>a:hover, li.dropdown-coins>a:focus {
+    float: left;
+    width: 60px;
+    border-width: 0;
+    border-top-color: #ddd;
+    border-left-color: #ddd;
+    border-right-color: #ddd;
+    border-bottom-color: #eee;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: 0px;
+    border-width: 0px;
+    width: 60px;
+    min-width: 0;
+}
+
+.dropdown-menu>li>a {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+li.refresh-data.btn {
+    float: right;
+    width: 60px;
+    background-color: black;
+    height: 42px;
+    padding: 0px;
+    border-width: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#dropdown-coins-label {
+    font-size: 1.2em;
+    line-height: 25px;
+    height: 42px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+	font-weight: 700;
+}
+
+.glyphicon-refresh.btn-refresh {
+    font-size: 1.3em;
+    line-height: 38px;
+    float: right;
+    left: 0px;
+    color: white;
+    width: 60px;
+}
+
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+    cursor: default;
+}
+
+.input-group-addon {
+    width: 100px;
+	background-color: #F7F7F7;
+	font-weight: 600;
+}
+
+.form-control.standardized-width {
+    width: 310px;
+    box-shadow: none;
+	background-color: #F7F7F7;
+	font-weight: 600;
+}
+
+#personal-table>tbody>tr>td {
+    border-top: 0;
+    padding: 3px 2px 2px 2px;
+}
+
+#workers-table>thead>tr>th {
+	font-weight: 600;
+	font-size: 13px;
+}
+
+#blocksfound-table>thead>tr>th {
+	font-weight: 600;
+	font-size: 13px;
+}
+
+#workers-table>tbody>tr>td {
+    padding: 3px 2px 2px 2px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+#blocksfound-table>tbody>tr>td {
+    padding: 3px 2px 2px 2px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+#workers-table>tbody>tr:nth-child(odd)>td {
+	background-color: #F7F7F7;
+}
+
+#blocksfound-table>tbody>tr:nth-child(odd)>td {
+	background-color: #F7F7F7;
+}
+
+th#hr1, td#hr1, th#hr3, td#hr3, th#hr6, td#hr6, th#hr12, td#hr12, th#hr24, td#hr24, th#hr48, td#hr48  {
+    text-align: center;
+    width: 16.67%;
+}
+
+th.worker, td.worker {
+    text-align: center;
+    width: 35%;
+}
+
+th.shares, td.shares {
+    text-align: center;
+    width: 30%;
+}
+
+th.version, td.version {
+    text-align: center;
+    width: 35%;
+}
+
+.table.table-condensed {
+    margin-bottom: 10px;
+}
+
+#wrap {
+    margin: 0 auto -48px;
+    padding: 0 0 30px;
+}
+
+.alert {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#block-performance-container {
+    max-width: 420px;
+	height: 180px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#block-performance-placeholder {
+	width: 100%;
+	height: 100%;
+}
+
+#footer {
+    height: 30px;
+    border-top: 1px solid #e7e7e7;
+    background: none repeat scroll 0% 0% #f5f5f5;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-container {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#footer .text-muted {
+    padding-top: 7px;
+    padding-bottom: 8px;
+    line-height: 1em;
+    text-align: center;
+    font-size: 1em;
+	font-weight: 200;
+}
+
+p[name="data-date"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+	font-style: italic;
+	font-weight: 600;
+}
+
+#workers-title, #blocks-title {
+	margin-top: 15px;
+}
+
+#workers-title .badge {
+    vertical-align: text-bottom;
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.tooltip-inner {
+    max-width: 130px;
+}
+
+.glyphicon {
+    color: #000;
+}
