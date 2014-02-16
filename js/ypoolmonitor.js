@@ -30,6 +30,7 @@ $('form').on('submit', function (event) {
 });
 
 $('li.dropdown-coins [role="menuitem"]').on('click', function () {
+	navigator.notification.vibrate(500);
     $('#dropdown-coins-label').text(this.text)
     coinType = this.text;
     localStorage.setItem('coinType', coinType);
@@ -38,6 +39,7 @@ $('li.dropdown-coins [role="menuitem"]').on('click', function () {
 })
 
 $('.btn-refresh').on('click', function () {
+	navigator.notification.vibrate(500);
     refreshData();
 })
 
